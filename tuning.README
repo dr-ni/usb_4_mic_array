@@ -1,0 +1,19 @@
+https://forum.seeedstudio.com/t/any-suggestions-on-how-to-increase-the-voice-recognition-accuracy-in-noisy-environment/5864
+
+debian@beaglebone:~/usb_4_mic_array$ sudo python tuning.py STATNOISEONOFF
+STATNOISEONOFF: 1
+
+debian@beaglebone:~/usb_4_mic_array$ sudo python tuning.py MIN_NN 1.0
+MIN_NN: 1.0
+
+debian@beaglebone:~/usb_4_mic_array$ sudo python tuning.py GAMMA_NS 3.0
+GAMMA_NS: 3.0
+
+
+STATNOISEONOFF Stationary noise suppression.
+
+MIN_NN Gain-floor for non-stationary noise suppression. [−inf … 0] dB
+(default: −10dB = 20log10 = 0.3)
+
+GAMMA_NS Over-subtraction factor of stationary noise. min … max attenuation
+(default=0.1)
