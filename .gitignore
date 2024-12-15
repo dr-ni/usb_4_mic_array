@@ -1,5 +1,6 @@
 .python-version
 pyvenv.cfg
+lib64
 bin/
 lib/
 lib64/
